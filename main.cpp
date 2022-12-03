@@ -8,11 +8,10 @@ Everything inputs("", "");
 
     inputs.sleep();
 
-    pickClass();
-    cin >> inputs.clas;
+    inputs.clas = pickClass();
 
-    pickRace();
-    cin >> inputs.race;
+
+    inputs.race = pickRace();
 
     inputs.setStats();
 

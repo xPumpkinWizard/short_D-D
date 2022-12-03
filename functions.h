@@ -10,7 +10,9 @@ using namespace std;
 
 
 
-void pickClass(){
+int pickClass(){
+    int key = 0;
+    string choice;
     cout << "Welcome to The World of Dungeons & Dragons!" << endl;
     cout << "Pick your Class"<<endl;
     cout << "Warrior : 1 : 'Smack 'em in da head'" << endl;
@@ -29,15 +31,35 @@ void pickClass(){
     cout << "\t Strength = 1";
     cout << "\t Dexterity = 8";
     cout << "\t Intelligence = 1 \n";
-
+    while (key == 0){
+        cin >> choice;
+        if (choice == "1") {key = 1; }
+        if (choice == "2") {key = 2; }
+        if (choice == "3") {key = 3; }
+        if (choice == "4") {key = 4; }
+        else{cout << "ERROR (Hint: try entering 1, 2, 3, 4)" << endl;}
+    }
+    return key;
 
 }
-void pickRace(){
+int pickRace(){
+    int key = 0;
+    string choice;
     cout << "Now choose your Race" << endl;
     cout << "Human : 1 : \n \t +1 All Stats" << endl;
     cout << "Orc : 2 : \n \t +2 Strength" << endl;
     cout << "Elf : 3 : \n \t +1 Dexterity, +1 Intelligence" << endl;
     cout << "Dwarf : 4 : \n \t +1 Strength, +1 Intelligence" << endl;
+
+    while (key == 0){
+        cin >> choice;
+        if (choice == "1") {key = 1; }
+        if (choice == "2") {key = 2; }
+        if (choice == "3") {key = 3; }
+        if (choice == "4") {key = 4; }
+        else{cout << "ERROR (Hint: try entering 1, 2, 3, 4)" << endl;}
+    }
+    return key;
 
 }
 
